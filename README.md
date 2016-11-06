@@ -50,6 +50,39 @@ Line 5
 Line 2
 Line 9
 ```
+
+```csharp
+namespace Lab8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Line 1");
+            goto line4;
+            line2:
+            Console.WriteLine("Line 2");
+            goto line9;
+            Console.WriteLine("Line 3");
+            line4:
+            Console.WriteLine("Line 4");
+            Console.WriteLine("Line 5");
+            goto line2;
+            Console.WriteLine("Line 6");
+            
+            Console.WriteLine("Line 7");
+            Console.WriteLine("Line 8");
+            line9:
+            Console.WriteLine("Line 9");
+            goto line10;
+           
+            Console.WriteLine("Line 10");
+            line10:;
+        }
+    }
+}
+
+```
 ###1.1.2. try…catch…finally
 ประโยค ```try…catch…finally``` ใช้สำหรับการดักจับและจัดการข้อผิดพลาดของโปรแกรม ทั้งขณะทำงาน (Run Time Process) หรือในขณะเริ่มต้นทำงาน (Init Process) โดยเราจะวางคำสั่งที่คาดการว่าจะเกิดข้อผิดพลาดขึ้นไว้ในบล็อกของ ```Try``` และวางส่วนจัดการข้อผิดพลาดไว้ในบล็อกของ ```catch``` และถ้ามีการดำเนินการใดๆ ที่ต้องทำทั้งในกรณีที่มีและไม่มีข้อผิดพลาด ก็จะใส่ไว้ในบล็อกของ ```Finally``` ในคำสั่งนี้สามารถเขียนบล็อกของ ```catch``` ได้หลายบล็อก คำสั่งนี้มีประโยชน์มากในการทำงานกับระบบอินเตอร์เน็ต โดยเฉพาะในกรณีที่การเชื่อมต่อไม่เสถียร เพราะจะช่วยป้องกันการค้างของโปรแกรมของเราขณะเรียกข้อมูลจาก network ได้
 **ตัวอย่าง** โปรแกรมที่ไม่ได้ใช้คำสั่ง ```try…catch…finally```
