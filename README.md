@@ -540,6 +540,40 @@ Grade C
 50-54|	D
 0-49|	F
 
+```CS
+using System;
+using System.IO;
+public class ExceptionLearning
+{
+    public static void Main()
+    {
+        Random random1 = new Random();
+        int randomNumber1 = random1.Next(0, 100);
+        Console.WriteLine("1. Random 0 - 9");
+        Console.WriteLine("    Random1 = {0} ", randomNumber1);
+        Console.WriteLine("");
+
+        int point = randomNumber1;
+        if (point < 50)
+            Console.WriteLine("Grade F");
+        else if (point < 55)
+            Console.WriteLine("Grade D");
+        else if (point < 60)
+            Console.WriteLine("Grade D+");
+        else if (point < 65)
+            Console.WriteLine("Grade C");
+        else if (point < 70)
+            Console.WriteLine("Grade C+");
+        else if (point < 75)
+            Console.WriteLine("Grade B");
+        else if (point < 80)
+            Console.WriteLine("Grade B+");
+        else
+            Console.WriteLine("Grade A");
+    }
+    }
+```
+
 3. รูปแบบการพิมพ์คือ score: [sss] grade: [gg] เมื่อ sss คือคะแนน และ gg คือ เกรดที่ได้
 
 ###1.2.5. คำสั่ง ```switch```
