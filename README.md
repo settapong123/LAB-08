@@ -97,6 +97,7 @@ public class TryCatch
     }
 }
 ```
+
 **ผลที่ได้**
 
 โปรแกรมจะค้างและปรากฏข้อความต่อไปนี้บนหน้าจอ
@@ -178,6 +179,7 @@ public class TryCatch
 ```
 
  รันได้
+
 ###2.
 ``` csharp
 using System;
@@ -216,6 +218,7 @@ namespace Lab8
 }
 ```
 ###3.
+
 ``` csharp
 using System;
 public class TryCatch
@@ -326,7 +329,14 @@ public class ExceptionLearning
         throw new _____________________();
     }
  }
-````
+```
+```
+```
+
+![](https://github.com/settapong123/LAB-08/blob/master/lab803.JPG?raw=true)
+![](https://github.com/settapong123/LAB-08/blob/master/lab804.JPG?raw=true)
+![](https://github.com/settapong123/LAB-08/blob/master/lab804.JPG?raw=true)
+![](https://github.com/settapong123/LAB-08/blob/master/lab805.JPG?raw=true)
 
 ###เรื่องของ exception นี้ศึกษาเพิ่มเติมได้ [ที่นี่](http://msdn.microsoft.com/en-us/library/vstudio/2w8f0bss%28v=vs.100%29.aspx)
 
