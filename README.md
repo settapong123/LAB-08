@@ -176,6 +176,8 @@ public class TryCatch
      }
  }
 ```
+
+ รันได้
 ###2.
 ``` csharp
 using System;
@@ -189,6 +191,29 @@ public class TryCatch
         Console.WriteLine(a);
      }
  }
+```
+
+```csharp
+namespace Lab8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 0;
+            int b = 10;
+            try
+            {
+                b /= a;
+                Console.WriteLine(a);
+            }
+            catch 
+            {
+                Console.WriteLine("NullReferenceException");
+            }
+        }
+    }
+}
 ```
 ###3.
 ``` csharp
@@ -205,6 +230,33 @@ public class TryCatch
         }
      }
  }
+```
+
+```csharp
+namespace Lab8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int value = 800000000;
+
+            checked // check for overflow
+            {
+                try
+                {
+                    int square = value * value;
+                    Console.WriteLine("{0} ^ 2 = {1}", value, square);
+                }
+                catch
+                {
+                    Console.WriteLine("OverflowException");
+                }
+
+            }
+        }
+    }
+}
 ```
 ###1.1.3. คำสั่ง ```throw```
 
